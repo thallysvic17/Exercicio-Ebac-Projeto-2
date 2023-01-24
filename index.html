@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>tabela</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Fira+Code:wght@300;400&family=Noto+Sans&family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class='container'>
+        <header>
+            Agenda de contatos
+        </header>
+        <form id="Valid-Form">
+            <input id='contact'type="text" required placeholder="Nome Completo">
+            <input id='tel' type="number"  maxlength='11' required placeholder="Telefone de Contato">
+            <button type="submit">Adicionar +</button>
+        </form>
+        <table cellspacing="0" class="table">
+            <div class="thead">
+                <thead>
+                    <tr>
+                        <th>
+                            Nome Completo
+                        </th>
+                        <th>
+                            Telefone Completo
+                        </th>
+                    </tr>
+                </thead>
+            </div>
+            <tbody class="tbody">
+                <tr>
+                    <td> Nome </td>
+                    <td> Telefone</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
